@@ -1,9 +1,16 @@
+import Typography from "./Typography";
 import { Green } from "./style";
 
 export default function Container(props: any) {
     return (
-        <div style={{ ...Green.Container, width: "500px", height: "500px" }}>
-            <h2 style={Green.Label}>{props.label}</h2>
+        <div 
+            style={{ 
+                ...Green.Container, 
+                width: props.width ? props.width : "auto", 
+                height: props.height ? props.height : "auto" 
+            }}
+        >
+            <Typography variant="h1" style={{ ...Green.Typography, textAlign: "center" }}>{props.label}</Typography>
             {props.children}
         </div>
     )

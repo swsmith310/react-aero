@@ -1,12 +1,11 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Container from './components/Container';
+import Typography from "./components/Typography";
 
 function App() {
   return (
-    <Container label="Test Component">
-      <p>Hello world!</p>
+    <Container label="Test Component" width="500px" height="500px">
+      <Typography>Hello world!</Typography>
     </Container>
   );
 }
