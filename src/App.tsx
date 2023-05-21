@@ -7,12 +7,13 @@ import { useState } from 'react';
 
 function App() {
   const [ testValue, setTestValue ] = useState("Hello");
+  const [ color, setColor ] = useState("violet")
 
   return (
-    <Container color="red" label="Test Component" width="500px" height="500px">
+    <Container color={color} label="Test Component" width="500px" height="500px">
       <Typography>Hello world!</Typography>
-      <TextField color="red" value={testValue} onChange={(e: any) => setTestValue(e.target.value)} />
-      <Button color="red" label="Click me!" onClick={() => console.log("I am a button!")} />
+      <TextField color={color} value={testValue} onChange={(e: any) => setTestValue(e.target.value)} />
+      <Button color={color} label="Click me!" onClick={() => console.log("I am a button!")} />
     </Container>
   );
 }

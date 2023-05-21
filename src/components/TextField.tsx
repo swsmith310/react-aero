@@ -18,8 +18,8 @@ export default function TextField(props: any) {
     }, []);
 
     const style = {
-        borderRadius: "6px",
-        borderSize: "1px",
+        borderRadius: "0.25em",
+        borderWidth: "1px",
         borderStyle: "solid",
         fontFamily: "Hind"
     }
