@@ -5,6 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: url("https://archive.org/download/bliss-600dpi/bliss-600dpi.png");
+  background-size: cover;
 }
 
 code {
